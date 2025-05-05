@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Sobre from './pages/Sobre';
+import Contato from './pages/Contatos';
+import Projetos from './pages/Projetos';
 import './App.css';
+
+const LINKS = [
+  { to: "/", label: "Sobre" },
+  { to: "/projetos", label: "Projetos" },
+  { to: "/contato", label: "Contato" }
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Router>
+      <header>
+        <Link to="/" className="logo">Théo Penteado Zepponi</Link>
+        <nav>
+          <ul>
+            {LINKS.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </header>
-    </div>
+
+      <Routes>
+        <Route path="/" element={<Sobre />} />
+        <Route path="/projetos" element={<Projetos />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
+    </Router>
   );
 }
 
