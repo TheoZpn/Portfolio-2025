@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Sobre from './pages/Sobre';
-import Contato from './pages/Contatos';
-import Projetos from './pages/Projetos';
+import Sobre from './pages/Sobre/sobre.jsx';
+import Contato from './pages/Contatos/contatos.jsx';
+import Projetos from './pages/Projetos/projetos.jsx';
 import './App.css';
 
 const LINKS = [

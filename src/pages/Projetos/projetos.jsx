@@ -1,7 +1,11 @@
 import React from 'react';
-import robocarton from "../robocarton.webp";
-import desinigrafic from "../desinigrafic.jpg";
-import spacuinvada from "../spacuinvada.jpg";
+import robocarton from "../../assets/robocarton.webp";
+import desinigrafic from "../../assets/desinigrafic.jpg";
+import spacuinvada from "../../assets/spacuinvada.jpg";
+import './projetos.css';
+
+
+
 
 const Projetos = () => {
   return (
@@ -36,8 +40,8 @@ const Projetos = () => {
           alt="Exemplo de design gráfico criado durante meu trabalho" 
           className="projeto-img"
         />
-        <h2>Trabalho em Design Gráfico</h2>
-        <p>Trabalho como Designer Gráfico, criando logos e rótulos para diversas marcas e produtos.</p>
+        <h2>Experiência em Design Gráfico</h2>
+        <p>Um tempo estagiando como Designer Gráfico, criando e imprimindo logos e rótulos para diversas marcas e produtos.</p>
         <a href="link-do-projeto-3" target="_blank" rel="noopener noreferrer" aria-label="projeto de Design Gráfico">Ver Projeto</a>
       </div>
     </div>
