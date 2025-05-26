@@ -15,7 +15,7 @@ function Contato() {
       <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" />
 
       <label htmlFor="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
+      <textarea id="mensagem" name="mensagem" rows="3" required placeholder="Digite sua mensagem"></textarea>
 
       <button type="submit">Enviar</button>
     </form>

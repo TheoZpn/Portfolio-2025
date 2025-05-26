@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.escola {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.escola-img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
